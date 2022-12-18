@@ -12,7 +12,7 @@ phases:
       - dotnet build AWSCodePipelineDemo/AWSCodePipelineDemo.csproj
   post_build:
     commands:
-      - dotnet publish -c Release -o ./ AWSCodePipelineDemo.csproj
+      - dotnet publish -c Release -o ./ AWSCodePipelineDemo/AWSCodePipelineDemo.csproj
 artifacts:
   files:
     - '**/*'
